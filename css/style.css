@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "renade";
+	src: url("../Ranade_Complete/Ranade_Complete/Fonts/TTF/Ranade-Variable.ttf")
+		format("truetype");
+}
+
+@font-face {
+	font-family: "conega";
+	src: url("../conega/CONEGA.otf") format("opentype");
+}
