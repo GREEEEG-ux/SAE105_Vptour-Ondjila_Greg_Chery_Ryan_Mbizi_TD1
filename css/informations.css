@@ -1,133 +1,7 @@
-.hero {
-	height: 100vh;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	text-align: left;
-	padding: 0 6rem;
-	position: relative;
-	color: white;
+body {
+	background-color: black;
 }
-
-.hero div {
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
-}
-
-.hero h1 {
-	font-family: "conega";
-	font-size: 128px;
-}
-
-.hero h3 {
-	font-family: "renade";
-	font-size: 32px;
-	width: 30%;
-}
-
-.hero p {
-	font-family: "renade";
-	font-size: 1vw;
-	width: 29%;
-}
-
-.hero img {
-	width: 100%;
-	height: 100vh;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-	filter: brightness(60%);
-}
-
-.middle {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100%;
-}
-
-.plainenorm {
-	width: 80%;
-	height: 100vh;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0 6rem;
-	color: white;
-	font-family: "renade";
-	font-size: 1vw;
-}
-
-.plainenorm div {
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
-}
-
-.plainenorm h2 {
-	font-family: "conega";
-	font-size: 64px;
-	width: 40%;
-}
-
-.plainenorm p {
-	font-family: "renade";
-	font-size: 1vw;
-	width: 40%;
-}
-
-.plainenorm img {
-	width: 100%;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-}
-
-.plaine2x {
-	width: 20%;
-	height: 100vh;
-}
-
-.plaine2x div {
-	height: 50%;
-	position: relative;
-	display: flex;
-	justify-content: end;
-	align-items: center;
-	flex-direction: column;
-	padding-bottom: 5vh;
-}
-
-.plaine2x div h2 {
-	font-family: "renade";
-	font-size: 32px;
-	color: white;
-	font-weight: 350;
-}
-
-.plaine2x div button {
-	font-family: "renade";
-	font-size: 15px;
-	background: none;
-	border: none;
-	cursor: pointer;
-}
-
-.plaine2x div button a {
-	text-decoration: none;
-	color: white;
-	border: 1px solid white;
-	padding: 1rem 2rem;
-}
-
-.plaine2x div img {
+.tableau img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -137,18 +11,74 @@
 	z-index: -1;
 }
 
-.sabledirect div {
+.tableau {
 	display: flex;
-	flex-direction: column;
-	gap: 8rem;
+	justify-content: center;
 	align-items: center;
+	height: 100vh;
 }
 
-.palinesoleil div {
-	display: flex;
-	flex-direction: column;
-	gap: 8rem;
-	align-items: center;
+table {
+	color: white;
+}
+
+table,
+th,
+td {
+	border: 1px solid white;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 15px;
+	width: 200px;
+	font-family: "renade";
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #111;
+}
+
+tr:nth-child(odd) {
+	background-color: #222;
+}
+
+tr:hover {
+	background-color: #444;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: white;
+}
+
+a:active {
+	color: white;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: white;
 }
 
 .thirddle {
@@ -244,6 +174,7 @@ form.contact-form .btn-reset {
 	color: #fff;
 	border: 1px solid rgba(255, 255, 255, 0.12);
 }
+
 .minipics {
 	display: flex;
 	gap: 1rem;
