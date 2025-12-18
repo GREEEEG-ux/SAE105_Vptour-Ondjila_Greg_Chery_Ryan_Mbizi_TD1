@@ -1,0 +1,291 @@
+section {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	padding: 10vh 3vw;
+}
+
+.hero {
+	overflow: hidden;
+	display: flex;
+	justify-content: start;
+	align-items: end;
+}
+
+.hero .videoHero {
+	position: absolute;
+	top: -10%;
+	left: 0;
+	width: 100%;
+	height: 110%;
+	object-fit: cover;
+}
+
+.hero div {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5vh;
+}
+
+.hero h2 {
+	font-family: "conega";
+	font-size: 4vw;
+	color: white;
+	font-weight: 350;
+	z-index: 2;
+}
+
+.hero p {
+	font-family: "renade";
+	font-size: 1vw;
+	color: white;
+	font-weight: 350;
+	width: 60%;
+	z-index: 2;
+}
+
+.story {
+	position: relative;
+}
+
+.story > img {
+	width: 50%;
+	height: auto;
+	z-index: 3;
+	position: relative;
+	margin-top: 10vh;
+}
+
+.story div {
+	display: flex;
+	flex-direction: column;
+	background-color: #e2e2e2;
+	/* gap: 1.5vh; */
+	width: 50vw;
+	height: 70vh;
+	position: absolute;
+	/* margin-top: -20vh; */
+	overflow: hidden;
+	top: -10vh;
+	right: 4vw;
+	z-index: 2;
+	padding: 10vh 8vw 3vh 13vw;
+}
+
+.story div h1 {
+	font-family: "renade";
+	font-size: 3.5vw;
+	color: black;
+	font-weight: 350;
+	z-index: 2;
+}
+
+.story div h2 {
+	font-family: "renade";
+	font-size: 2vw;
+	color: black;
+	font-weight: 350;
+	z-index: 2;
+}
+.story div hr {
+	width: 20%;
+	height: 0.3vh;
+	margin-top: -0.1vh;
+	background-color: black;
+	border: none;
+	z-index: 2;
+}
+
+.story div p {
+	font-family: "renade";
+	font-size: 1vw;
+	color: black;
+	font-weight: 350;
+	z-index: 2;
+}
+
+.story div button {
+	padding: 0.9rem 0;
+	margin-top: 4vh;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	font-family: "renade";
+	font-size: 1vw;
+	cursor: pointer;
+	z-index: 2;
+	width: fit-content;
+}
+.story div img {
+	width: 90%;
+	height: auto;
+	object-fit: cover;
+	position: absolute;
+	top: 2vh;
+	left: -6vw;
+	z-index: -1;
+}
+
+.description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 1.5vw;
+	height: 70vh;
+}
+
+.description .bigP {
+	font-size: 19vw;
+	font-family: "renade";
+	font-weight: 600;
+	color: rgb(0, 0, 0);
+	z-index: 2;
+	margin-left: 7vw;
+}
+
+.description div {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5vh;
+}
+
+.description div hr {
+	width: 20%;
+	height: 0.3vh;
+	margin-top: -0.1vh;
+	background-color: black;
+	border: none;
+	z-index: 2;
+}
+
+.description div h2 {
+	font-family: "renade";
+	font-size: 2.5vw;
+	color: black;
+	font-weight: 500;
+	margin-top: -4vh;
+}
+
+.description div p {
+	font-family: "renade";
+	font-size: 1vw;
+	color: black;
+	font-weight: 350;
+}
+.description div div {
+	display: flex;
+	flex-direction: row;
+	gap: 1.5vh;
+}
+
+.description div div p {
+	width: 40%;
+}
+
+.mapContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mapContainer iframe {
+	width: 100%;
+	height: 70vh;
+	border-radius: 1vw;
+}
+.thirddle {
+	background-color: #1a1a1a;
+	color: #fff;
+	padding: 6rem 2rem;
+	min-height: 70vh;
+}
+
+.contact-container {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.contact-left {
+	flex: 1 1 auto;
+}
+
+.contact-left h1 {
+	font-family: "conega";
+	font-size: clamp(2.5rem, 6vw, 5rem);
+	margin: 0 0 1rem 0;
+}
+
+.contact-left p {
+	color: rgba(255, 255, 255, 0.8);
+	max-width: 48ch;
+	margin: 0;
+	font-family: "renade";
+}
+
+.contact-right {
+	flex: 0 0 440px;
+}
+
+form.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	max-width: 520px;
+	margin: 0 auto;
+}
+
+.formeu {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	border-radius: 15px;
+}
+
+form.contact-form input,
+form.contact-form textarea {
+	padding: 1rem;
+	border: none;
+	border-radius: 6px;
+	background: #202127;
+	color: white;
+	font-family: "renade";
+	font-size: clamp(0.9rem, 1.3vw, 1rem);
+	resize: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+form.contact-form textarea {
+	min-height: 140px;
+}
+
+.form-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	align-items: stretch;
+}
+
+form.contact-form button {
+	padding: 0.9rem 1rem;
+	border: none;
+	background-color: #fff;
+	color: #111;
+	font-family: "renade";
+	font-size: clamp(0.9rem, 1.1vw, 1rem);
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+form.contact-form .btn-reset {
+	background: transparent;
+	color: white;
+	border: 1px solid white;
+}
