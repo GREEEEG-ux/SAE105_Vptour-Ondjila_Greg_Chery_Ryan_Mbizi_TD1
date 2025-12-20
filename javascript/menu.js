@@ -1,13 +1,11 @@
 var sidenav = document.getElementById("mySidenav");
 var openbtn = document.getElementById("menu");
-var closebtn = document.getElementById("closebtn");
+var closebtn = document.getElementById("close");
 
-openbtn.onclick = openNav;
-closebtn.onclick = closeNav;
-
-function openNav() {
+openbtn.addEventListener("click", function () {
 	sidenav.classList.add("active");
-}
-function closeNav() {
+});
+
+closebtn.addEventListener("click", function () {
 	sidenav.classList.remove("active");
-}
+});

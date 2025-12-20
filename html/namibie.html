@@ -3,16 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>VPTour - Ondjila</title>
 		<link rel="stylesheet" href="../css/footer.css" />
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/namibie.css" />
 		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/carousel.css" />
 	</head>
 	<body>
 		<header>
 			<div class="menu">
-				<button>
+				<button id="menu">
 					<img src="../img/menu.png" alt="menu" />
 				</button>
 				<a href="">A propos</a>
@@ -24,9 +25,38 @@
 				/></a>
 			</button>
 		</header>
+		<aside id="mySidenav">
+			<div class="entete">
+				<h1>ONDJILA</h1>
+				<button id="close">
+					<img src="../img/close.png" alt="" />
+				</button>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="../html/index.html">Acceuil</a>
+					</li>
+					<li>
+						<a href="../html/nossites.html">Nos Sites</a>
+					</li>
+					<li>
+						<a href="../html/informations.html">Informations</a>
+					</li>
+				</ul>
+			</nav>
+			<article class="montain">
+				<p>
+					vous guider sur des itinéraires spectaculaires, de l'océan
+					au sommet.
+				</p>
+				<div class="imgContainer">
+					<img src="../img/montain.png" alt="" />
+				</div>
+			</article>
+		</aside>
 		<main>
 			<section class="hero">
-				<!-- video loop sans song et et autoplay -->
 				<video
 					src="https://gregcryanm.alwaysdata.net/video/desertdenamiebie.mp4"
 					autoplay
@@ -91,6 +121,44 @@
 						constitue une source d’eau vitale, bien plus importante
 						que la pluie.
 					</p>
+				</div>
+			</div>
+		</section>
+		<section class="wholecarousel">
+			<div class="carousel">
+				<div class="group">
+					<div class="card">
+						<img src="../img/sablecarousel1.png" alt="1" />
+					</div>
+					<div class="card">
+						<img src="../img/sablecarousel2.png" alt="2" />
+					</div>
+					<div class="card">
+						<img src="../img/sablecarousel3.png" alt="3" />
+					</div>
+					<div class="card">
+						<img src="../img/sablecarousel4.png" alt="4" />
+					</div>
+					<div class="card">
+						<img src="../img/sablecarousel5.png" alt="5" />
+					</div>
+				</div>
+				<div aria-hidden class="group">
+					<div class="card">
+						<img src="../img/sablecarousel1.png" alt="1" />
+					</div>
+					<div class="card">
+						<img src="../img/sablecarousel2.png" alt="2" />
+					</div>
+					<div class="card">
+						<img src="../img/sablecarousel3.png" alt="3" />
+					</div>
+					<div class="card">
+						<img src="../img/sablecarousel4.png" alt="4" />
+					</div>
+					<div class="card">
+						<img src="../img/sablecarousel5.png" alt="5" />
+					</div>
 				</div>
 			</div>
 		</section>
@@ -172,5 +240,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="../javascript/menu.js"></script>
 	</body>
 </html>

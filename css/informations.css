@@ -58,27 +58,10 @@ tr:hover {
 
 a {
 	text-decoration: none;
-	color: white;
 }
 
 a:hover {
 	text-decoration: underline;
-}
-
-a:visited {
-	color: white;
-}
-
-a:active {
-	color: white;
-}
-
-a:link {
-	color: white;
-}
-
-a:visited {
-	color: white;
 }
 
 .thirddle {

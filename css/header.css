@@ -33,52 +33,98 @@ header button {
 	cursor: pointer;
 }
 
-.sidenav {
-	height: 100%;
-	width: 250px;
+aside {
 	position: fixed;
-	z-index: 10000;
 	top: 0;
-	left: -250px;
-	background-color: #bebbbb;
-	overflow-x: hidden;
-	transition: left 0.5s ease;
-	padding-top: 60px;
-}
-.sidenav a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #818181;
-	display: block;
-	transition: 0.3s;
-}
-.sidenav a:hover {
-	color: #f1f1f1;
-}
-
-.sidenav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.sidenav.active {
 	left: 0;
+	width: 27%;
+	background: rgb(255, 255, 255);
+	height: 100%;
+	z-index: 10000;
+	padding: 1rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: rgb(0, 0, 0);
+	backdrop-filter: blur(3.2px);
+	transform: translateX(-100%);
+	transition: all 0.3s ease-in-out;
 }
 
-.sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
+aside.active {
+	transform: translateX(0);
 }
 
-.burger-icon span {
-	display: block;
-	width: 25px;
-	height: 3px;
-	background-color: #fff;
-	margin-bottom: 5px 0;
+aside .entete {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+aside .entete button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1.375rem;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-family: "renade";
+	font-size: 3rem;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+aside .montain p {
+	font-family: "renade";
+	font-size: 1.3rem;
+	width: 100%;
+	color: rgb(0, 0, 0);
+}
+
+aside h1 {
+	font-family: "conega";
+	font-size: 3rem;
+	color: rgb(0, 0, 0);
+}
+
+aside .montain {
+	display: flex;
+	justify-content: end;
+	align-items: start;
+	flex-direction: column;
+	gap: 1rem;
+	height: fit-content;
+	overflow: hidden;
+}
+
+aside .imgContainer {
+	width: 100%;
+	height: 60%;
+	overflow: hidden;
+}
+
+aside .imgContainer img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }

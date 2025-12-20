@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body ::-webkit-scrollbar {
+	display: none !important;
+}
+
 @font-face {
 	font-family: "renade";
 	src: url("../Ranade_Complete/Ranade_Complete/Fonts/TTF/Ranade-Variable.ttf")
